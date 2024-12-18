@@ -1,0 +1,9 @@
+"""
+Program      -> DeclarationList
+DeclarationList -> Declaration DeclarationList | ε
+Declaration  -> Type Identifier ';' | Type Identifier '=' Expression ';' | Function
+Function     -> Type Identifier '(' ')' '{' DeclarationList '}'
+Type         -> 'int' | 'float' | 'double' | 'char'
+Expression   -> Number | Identifier
+Identifier   -> IDENTIFIER
+Number       -> NUMBER
